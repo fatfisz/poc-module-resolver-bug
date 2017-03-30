@@ -1,13 +1,11 @@
 {
-  "presets": ["es2015", "stage-0", "react"],
-  "plugins": ["react-hot-loader/babel",
+  "presets": ["es2015"],
+  "plugins": [
     ["module-resolver", {
-        "root": ["./src"],
-        "alias": {
-          "organisms": "components/2-organisms",
-          "pages": "components/3-pages",
-          "store": "store"
-        }
-      }]
-    ]
+      "root": ["./src"],
+      "alias": {
+        "pages": "components/3-pages"
+      }
+    }]
+  ]
 }

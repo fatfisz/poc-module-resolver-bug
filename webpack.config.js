@@ -1,5 +1,23 @@
-const config = process.env.NODE_ENV === 'production' ?
-  require('./webpack.config.production.js') :
-  require('./webpack.config.development.js');
+'use strict';
 
-module.exports = config;
+const path = require('path');
+
+
+module.exports = {
+  entry: [
+    './src/index',
+  ],
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: ['babel'],
+        include: path.join(__dirname, 'src'),
+      },
+    ],
+  },
+};
