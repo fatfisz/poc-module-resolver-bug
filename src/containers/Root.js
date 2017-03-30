@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import App from 'components/pages/App';
+import App from 'pages/App';
 
 class Root extends Component {
 
