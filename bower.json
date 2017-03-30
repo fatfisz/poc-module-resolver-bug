@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "authors": [
+    "Jasinski",
+    "Mariusz <mariusz.jasinski@sap.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hyTechne": "~1.5.4",
+    "kjur-jsrsasign": "jsrsasign#5.0.12",
+    "jquery": "2.1.4",
+    "bootstrap": "3.3.7"
+  }
+}
